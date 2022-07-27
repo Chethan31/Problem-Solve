@@ -68,3 +68,39 @@ while (count <= 4)
 }
 Console.WriteLine($"Loop count:{loopcount}");
 Console.WriteLine();
+
+//Aproach - 4
+i = 7;
+count = 1;
+loopcount = 0;
+while (count <= 4)
+{
+    loopcount++;
+    if (i % 2 == 1 && i % 3 == 1 && i % 4 == 1 && i % 5 == 1 && i % 6 == 1)
+    {
+        if (count != 3)
+            Console.WriteLine(i);
+        count++;
+    }
+    i = i + 21;
+}
+Console.WriteLine($"Loop count:{loopcount}");
+Console.WriteLine();
+
+//Aproach - 5
+i = 7;
+count = 1;
+loopcount = 0;
+while (count <= 4)
+{
+    loopcount++;
+        if (i % 2 == 1 && i % 3 == 1 && i % 4 == 1 && i % 5 == 1 && i % 6 == 1)
+        {
+            if (count != 3)
+                Console.WriteLine(i);
+            count++;
+        }
+    i = i + 42;
+}
+Console.WriteLine($"Loop count:{loopcount}");
+Console.WriteLine();
