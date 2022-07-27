@@ -19,21 +19,21 @@ for (i = 0; i < n; i++)
 Console.WriteLine();
 }
 
-//Not done
 Console.WriteLine();
 l = 0;
+int fact;
 for (i = 0; i < n; i++)
 {
     for (j = 0; j <= i; j++)
     {
+        fact = 1;
+        for (k = 1; k <= l; k++)
+            fact = fact * k;
+        Console.Write($"{fact} ");
         l++;
-        if (l % 2 == 0)
-            Console.Write("-");
-        Console.Write($"{Math.Pow(l, 2)} ");
     }
     Console.WriteLine();
 }
-//
 
 Console.WriteLine();
 for (i = 0; i < n; i++)
