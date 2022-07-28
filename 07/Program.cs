@@ -55,10 +55,11 @@ if (saving_investment == 'y' || saving_investment == 'Y')
     else
     {
         monthly_tax = 20;
-        net_annual_salary = gross_annual_salary - (annual_salary * 30) / 100;
+        net_annual_salary = gross_annual_salary - (annual_salary * 20) / 100;
         tax = gross_annual_salary - net_annual_salary;
-        Console.WriteLine($"Net Annual Salary:{net_annual_salary}");
         Console.WriteLine($"Tax Payable({monthly_tax}%):{tax}");
+        Console.WriteLine($"Net Annual Salary:{net_annual_salary}");
+        
     }
 }
 else
@@ -68,24 +69,25 @@ else
         monthly_tax = 0;
         net_annual_salary = gross_annual_salary;
         tax = gross_annual_salary - net_annual_salary;
-        Console.WriteLine($"Net Annual Salary:{net_annual_salary}");
         Console.WriteLine($"Tax Payable({monthly_tax}%):{tax}");
+        Console.WriteLine($"Net Annual Salary:{net_annual_salary}");
+        
     }
     else if (annual_salary > 100000 && annual_salary < 150000)
     {
         monthly_tax = 20;
         net_annual_salary = gross_annual_salary - (annual_salary * 20) / 100;
         tax = gross_annual_salary - net_annual_salary;
-        Console.WriteLine($"Net Annual Salary:{net_annual_salary}");
         Console.WriteLine($"Tax Payable({monthly_tax}%):{tax}");
+        Console.WriteLine($"Net Annual Salary:{net_annual_salary}");
     }
     else if (annual_salary > 150000)
     {
         monthly_tax = 30;
         net_annual_salary = gross_annual_salary - (annual_salary * 30) / 100;
         tax = gross_annual_salary - net_annual_salary;
-        Console.WriteLine($"Net Annual Salary:{net_annual_salary}");
         Console.WriteLine($"Tax Payable({monthly_tax}%):{tax}");
+        Console.WriteLine($"Net Annual Salary:{net_annual_salary}");
     }
 }
 
